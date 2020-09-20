@@ -1,0 +1,6 @@
+AuthType Basic  
+AuthName "HCI Project access restricted"
+AuthUserFile /.htpasswd
+<Files myPage.html>
+require valid-user
+</Files>
