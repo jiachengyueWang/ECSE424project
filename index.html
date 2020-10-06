@@ -1,28 +1,128 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-	<h1>Real-time model copies sharing</h1>
+<html lang="en">
+<title>ECSE 424/542 Project</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: left;
+}
+p.normal {
+  font-weight: normal;
+}
 
-</head>
+p.light {
+  font-weight: lighter;
+}
+
+p.thick {
+  font-weight: bold;
+}
+
+p.thicker {
+  font-weight: 900;
+}
+</style>
 <body>
-<b>  <font size="+2">Observations</font></b><br>
-<b>Setting A: A lecture via videoconferencing </b><br>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="#Proposal" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Proposal</a>
+    <a href="#Low Fidelity Prototype" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Low Fidelity Prototype</a>
+    <a href="#Computer Prototype" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Computer Prototype</a>
+    <a href="#Formative Feedback" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Formative Feedback</a>
+    <a href="#Alpha System" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Alpha System</a>
+    <a href="#Beta System" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Beta System</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">More <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Team</a>
+        <a href="#" class="w3-bar-item w3-button">Course</a>
+        <a href="#" class="w3-bar-item w3-button">Instructor</a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="/w3images/la.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Los Angeles</h3>
+      <p><b>We had the best time playing at Venice Beach!</b></p>   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="/w3images/ny.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>New York</h3>
+      <p><b>The atmosphere in New York is lorem ipsum.</b></p>    
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="/w3images/chicago.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Chicago</h3>
+      <p><b>Thank you, Chicago - A night we won't forget.</b></p>    
+    </div>
+  </div>
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h1 class="w3-wide">REAL-TIME MODEL COPIES SHARING</h1>
+        <h2 class="w3-wide">Proposal</h2>
+    <b>  <font size="+2">Observations and Proposal</font></b><br>
+<h4>Setting A: A lecture via video-conferencing </b><h4>
+<div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <img src="/images/Low-Fi/proposal/onlinelecture.jpg" class="w3-round w3-margin-bottom" alt="Online Lecture" style="width:60%">
+      </div>
+    </div>
 An electrical engineering professor is giving a lecture of CPU boards to students via an online platform, the professor is holding up a CPU board and explaining the functions of each section of the board. One of the students has a question about the board, the student wants to know the function of a slot on the board, the only way of communicating with the professor is through the audio. In order to know which part the student is referring to, the professor holds the board closer up to the camera, and moves his finger with directions the student gives until he reaches the right spot. The professor answers the question and keeps going with the explanation of the CPU board. 
 
 <br>
-	
+  
 <b>Observations to persona:</b> In this scenario, the student is trying to specify the part of the CPU board that he has questions about to the professor, and eventually the professor managed to get to the right location by following the instructions the student gave. However, in the case of a more complex object, for example, a 3D model of the human nerve system, the actions taken in setting A would not be sufficient.  The observation leads to persona 1, David, the electrical engineering student.
 
 <br>
 <br>
 
-<b>Setting B: A discussion via videoconferencing</b><br>
+<b>Setting B: A discussion via video-conferencing</b><br>
+<div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <img src="/images/Low-Fi/proposal/groupdiscussion.jpg" class="w3-round w3-margin-bottom" alt="Group Discussion" style="width:60%">
+      </div>
+    </div>
 A team is working on building a 3D model of a temple, they made a model with the data collected from measuring the temple, but later on, they found out that some of the data collected were false, so they are having a video conference discussing the modifications required on the temple model. One of the team members has the hold of the model, the rest of the team members are feeding the member with the newly collected data information so that he can make marks of the locations that need modifications. One of the members suffers from social phobia, usually he just sends out text messages to work with the team, and it has been going smoothly until this incident. Under this circumstance, the best option would be to turn on the audio and the video to specify the location with the false data to the member with the hold of the model. The process is hard for him and takes a considerable amount of time. 
 
 <br>
 
-	
+  
 <b>Observations to persona:</b>  In this scenario, the member suffers from social phobia and has a hard time communicating with the rest of the team using video and audio. But knowing that guiding in text messages is not likely to help other members get the right location any time soon, in order to get the project done in time, he has to use body gestures and give direction instructions. Talking and using body gestures to a group of people can be very hard for someone suffering from social phobia, and if we have another alternative for addressing this problem, it does not just save time but also gives a more comfortable video conferencing environment for people with special needs.
 The observation leads to persona 2, Roderick, the team member who suffers from social phobia. 
 
@@ -44,16 +144,25 @@ Therefore, we need a faster and more visualised way for video conferences regard
 Name: David <br>
 Age: 21<br>
 Occupation:An electrical engineering student in McGill University<br> 
-
+<div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <img src="/images/Low-Fi/proposal/david.jpg" class="w3-round w3-margin-bottom" alt="David" style="width:60%">
+      </div>
+    </div>
 David is good with school work and finds circuitry fascinating. He wants to know about every detail of the circuit board when he is shown one. However, since the pandemic started, all on campus activities are cancelled, all the courses are taught over online platforms. David finds it hard to study for circuitry, because circuit boards are mostly complex and composes of tiny bits. It is hard to see the details from videos and also harder to ask questions when he is not able to touch it. 
 
 <br>
 
 <br>
 <b>Persona 2 </b>: Roderick<br>
-Name: Rodericl <br>
+Name: Roderick <br>
 Age: 28 <br>
 Occupation: An architect in a medium sized company<br>
+<div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <img src="/images/Low-Fi/proposal/architect.jpg" class="w3-round w3-margin-bottom" alt="Architect" style="width:60%">
+      </div>
+    </div>
 Roderick is an architect, he suffers from social phobia, so he does not have a lot of friends and feels uncomfortable talking to strangers. However, his job includes a lot of model building, and if the model is complicated, then he gets assigned to a group working with other architects. Even though he works in a group with other people, he does not talk to other team mates a lot, he finishes the job that is assigned to him alone, and if he needs to discuss with other team members, he prefers communicating over text messages or other social media. 
 
 <br>
@@ -130,13 +239,369 @@ UserAction: <br>
 <p>
 To avoid the circumstance mentioned above, we could design a function that can be implemented into ZOOM or any other video conferencing platforms.  When a presenter is trying to display an object like a PC board, it is barely possible to get all the details shown due to the internet speed or video quality. Audience may have the chance to click on the object to get the presenter’s notice by sending a vibrant message.</p>
 
-<p>After getting the presenter’s permission, the camera would start to scan the object(the object is lifted  closer to the camera) in order to generate a more detailed and visualized picture of the object. Or it would find the best match online according to its model, size, color, and etc. Certainly, this process may take some time or even fail due to network fluctuations. However, presenters can upload their pictures/model beforehand if it is important to show to the audience. Once the audience receives the picture/model, they will have a better comprehension about the presentation contents and even come up with more detailed questions to the presenter.
-
- </p>
+<p>After getting the presenter’s permission, the camera would start to scan the object(the object is lifted  closer to the camera) in order to generate a more detailed and visualized picture of the object. Or it would find the best match online according to its model, size, color, and etc. Certainly, this process may take some time or even fail due to network fluctuations. However, presenters can upload their pictures/model beforehand if it is important to show to the audience. Once the audience receives the picture/model, they will have a better comprehension about the presentation contents and even come up with more detailed questions to the presenter.</p>
 
 <br>
 <hr>
 <br>
+    </div>
+  </div>
+
+ 
+
+
+<!-- The Low Fidelity Prototype Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">Low Fidelity Prototype and Test Plan</h2>
+    <p class="w3-opacity"><i>October 2, 2020 </i></p>
+    <h3 class="w3-wide">Design Concepts</h3>
+    <p class="w3-justify">Based on the 10 PLUS 10 method, we have generated 10 first basic concepts about our model by means of sketches. Each one of the following sketches represents a different scenario that users might encounter while using it. 
+</p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="/images/Low-Fi/sketches/first.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="/images/Low-Fi/sketches/second.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="/images/Low-Fi/sketches/third.jpg" class="w3-round" alt="Random Name" style="width:60%">
+      </div>
+    </div>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="/images/Low-Fi/sketches/fourth.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="/images/Low-Fi/sketches/fifth.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="/images/Low-Fi/sketches/sixth.jpg" class="w3-round" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="/images/Low-Fi/sketches/seventh.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="/images/Low-Fi/sketches/eighth.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="/images/Low-Fi/sketches/nineth.jpg" class="w3-round" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="/Users/oderootieno/Desktop/ECSE424OderoYuhalWang/images/Low-Fi/sketches/tenth.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+    </div>
+
+
+    <h3 class="w3-wide">Prototyping</h3>
+    <h4 class="w3-wide">Prototype 1</h4>
+    <p class="w3-justify">Figure 1 shows a normal screen that users will see when using the video conferencing. And there is a NEVERASK button on the toolbar for users to activate the functionality.</p>
+ <p class="w3-justify">Figure 2 shows a pop-up window saying that the user has successfully joined a queue.</p>
+<p class="w3-justify">Figure 3 shows a complete queue so that the user can see in which order his/her request will be confirmed.</p>
+<p class="w3-justify">Figure 4 is for the presenter to accept or decline a user's request.</p>
+<p class="w3-justify">Figure 5 shows a shared image by everyone after the confirmation of request.</p>
+<p class="w3-justify">Figure 6 is the situation when the user’s request is declined.</p>
+
+</p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p>Figure 1: normal screen with NEVERASK button.</p>
+        <img src="/images/Low-Fi/prototype1/fig1.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Figure 2: Pop-up window</p>
+        <img src="/images/Low-Fi/prototype1/fig2.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Figure 3: Complete queue</p>
+        <img src="/images/Low-Fi/prototype1/fig3" class="w3-round" alt="Random Name" style="width:60%">
+      </div>
+    </div>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p>Figure 4: Presenter accept/decline</p>
+        <img src="/images/Low-Fi/prototype1/fig4.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Figure 5: Shared image</p>
+        <img src="/images/Low-Fi/prototype1/fig5.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Figure 6: User request declined</p>
+        <img src="/images/Low-Fi/prototype1/fig6.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+    </div>
+  </div>
+
+
+<h4 class="w3-wide">Prototype 2</h4>
+    <p class="w3-justify">Figure 1 shows a normal screen that users will see when using the video conferencing. And there is a NEVERASK button on the toolbar for users to activate the functionality (We have skipped the steps to get the presenter’s permission since that will be the same).</p>
+ <p class="w3-justify">Figure 2 is the interface that users will use. As you can see, the user’s cursor has turned to a small magnifying glass so that the user can zoom in any position on an image by simply moving his/her mouse.</p>
+<p class="w3-justify">Figure 3 shows that the cursor will move as the user moves the mouse.</p>
+<p class="w3-justify">Figure 4 shows a zoomed in image induced by the user’s magnifying glass.</p>
+<p class="w3-justify">Figure 5 shows a normal interface after the user clicks the ESC button after the functionality is no longer needed.</p>
+</p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p>Figure 1: Normal screen with NEVERASK button.</p>
+        <img src="/images/Low-Fi/prototype2/fig1.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Figure 2: User interface</p>
+        <img src="/images/Low-Fi/prototype2/fig2.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Figure 3: Cursor movement</p>
+        <img src="/images/Low-Fi/prototype2/fig3" class="w3-round" alt="Random Name" style="width:60%">
+      </div>
+    </div>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p>Figure 4: Zoomed in image of user magnifying glass</p>
+        <img src="/images/Low-Fi/prototype2/fig4.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Figure 5: Shared image</p>
+        <img src="/images/Low-Fi/prototype2/fig5.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+ <h4 class="w3-wide">Usability Goals</h4>
+<ul class="w3-ul " style="font-weight: bold;">
+  <li>1.   The system should be implemented in an existing video conferencing platform: </li>
+  <p class="w3-justify"> The system itself cannot be deemed as a comprehensive application since it only supports one main functionality. There is no reason for users to open an additional and unnecessary application while they are video conferencing. Besides, its design should be striking that users would quickly find the button using such functionality.</p>
+
+  <li>2.    The system should be convenient to use and quick to find:</li>
+   <p class="w3-justify"> The goal of this functionality is to facilitate more interactions between presenters and audience by introducing a virtual space to share details of an object. If it takes hours and hours for the software to get prepared or the users to find the button, then the design will become pointless.</p>
+  <li>3.    Presenters’ permission to scan the object is prioritized: </li>
+  <p class="w3-justify"> We do need to protect presenters’ privacy during video conferencing that if a user wants to use this functionality to have a better view of a certain object, the presenter’s permission must be granted. Since there might be some other objects displayed on screen that belong to the presenter, users cannot scan anything they want, especially something related to the presenter's privacy, like the brand of clothing.</p>
+
+  <li>4.    The system interface should be “intuitive”: </li>
+  <p class="w3-justify"> The goal of this functionality is to facilitate more interactions between presenters and audience by introducing a virtual space to share details of an object. If it takes hours and hours for the software to get prepared or the users to find the button, then the design will become pointless.</p>
+
+  <li>5.    The system should create more interactions between presenters and users:  </li>
+  <p class="w3-justify"> The system is designed to solve a specific issue that might happen during video conferencing. Users should have the opportunity to get a more detailed visualization of a certain object after the presenter’s permission is granted, which clears up confusion and creates more interactions.</p>
+
+  <li>6.    All audiences should be able to get such a visualization when a channel is open: </li>
+  <p class="w3-justify"> The functionality is not designed to be private. Once a visualization of an object is generated, everyone in the meeting should receive that image since others might have the same confusion or they just want to have a better view of it.</p>
+</ul> 
+
+ 
+
+<h3 class="w3-wide">Benchmark Tests</h3>
+<p>To add a caption to a table, use the caption tag.</p>
+
+<table style="width:100%">
+  <tr>
+    <th>Benchmark tasks</th>
+    <th>Association to goal(s)</th>
+  </tr>
+  <tr>
+    <td>Click the button to send a request</td>
+    <td>This test is related to goal 1 and 2. Users should be able to easily find the button to send a request to the presenter when they want to have a better visualization of something displayed on screen.</td>
+  </tr>
+  <tr>
+    <td>Permission is granted by the presenter</td>
+    <td>This test is related to goal 3. Presenter should receive a pop-up message saying that a certain object is selected to be scanned. If it is related to the meeting not something that is private, the presenter clicks YES button.</td>
+  </tr>
+   <tr>
+    <th>Channel is open</th>
+    <th>This test is related to goal 5 and 6. An object is scanned and the image is displayed on a virtual space to everyone, which gathers everyone to interact and learn.
+</th>
+  </tr>
+  <tr>
+    <td>The visualization is displayed</td>
+    <td>This test is related to goal 5 and 6. Users receive a 3D model of the object or a few detailed images of various sides (like front side, back side…). It may take a few minutes to gather all the information and get the visualization displayed. Meanwhile, the camera and mic are still on, and the presenter can solve any questions that users have raised.</td>
+  </tr>
+  <tr>
+    <td>Channel is closed</td>
+    <td>This test is related to goal 2 and 4. After a certain amount of time, the presenter can choose to close the display channel since the object is well presented or confusion has been cleared up. The whole process should be easy with a click on CLOSE button.</td>
+  </tr>
+</table>
+  
+  
+    <h3 class="w3-wide">User Introduction</h3>
+    <p class="w3-justify">Thank you for participating in our usability test in a term project. We really appreciate your participation and your thoughts or feedback is significant to us so that we can make more improvements and make our system more user-friendly.</p>
+    <p class="w3-justify">The estimated time duration of this test would be 20 minutes and no preparation or prerequisites are required. The product is currently in its early stage of development, there might be many usability flaws and inconveniences that you  may encounter. You have our sincere apologies for that. You will be given a few paper prototypes and asked to do some tasks based on the prototypes, please try to finish the tasks by your intuition and our instructions. Meanwhile, our team members will record your reactions and feedback on the prototypes.</p>
+    <p class="w3-justify">We aim to receive real results from you doing those tasks. Please do not worry about any failures to complete one of the tasks. Since it may attribute to our flawed design. Besides, our team members will be there to solve any confusions.</p>
+    <p class="w3-justify">Essentially, we need your permission to record the results from you for later improvements on our designed system. If something is related to your privacy, please let us know.</p>
+    <p class="w3-justify">Thank you for participating! Enjoy the tasks!</p>
+
+
+<h3 class="w3-wide">Observer Briefing</h3>
+    <p class="w3-justify">Thank you for participating in our usability test as an observer.  We really appreciate your participation and observation. Your reports and feedback are significant to us and to our designed system. Your work will contribute to our improvements on user experiences.</p>
+    <p class="w3-justify">Your main task is to observe how users perform their tests and record anything you find that is helpful and interesting. Please read the following instructions and outlines to get an idea about what you should do during the observation:</p>
+    <ol>
+      <li>Please provide a comfortable and quiet environment for users to perform their tasks.</li>
+      <li>Record users’ actions and reactions, try to be detailed and specific.</li>
+      <li>If needed, you may ask questions to users to better understand what they are thinking or doing.</li>
+      <li>If needed, you may ask questions to users to better understand what they are thinking or doing.</li>
+      <li>Help users get on the right track, if they deviate from the core theme.</li>
+      <li>Avoid giving your personal thoughts on certain tasks, give the initiative to users.</li>
+    </ol>  
+
+    <p class="w3-justify">If you have any further questions, our team member will be there to help you better understand during the test.</p>
+<p class="w3-justify">Thank you for your participation! Enjoy the test!</p>
+
+
+
+
+
+<h3 class="w3-wide">Test Script</h3>
+<h4 class="w3-wide">Prototype 1 (customised pop-up):</h4>
+
+    <p class="w3-justify">Thanks for participating in EasyAsk’s user testing. 
+Since the test has interaction between users, there are 2 screens presented, one is the user screen and the other one is the meeting host’s screen. 
+Now, let’s start the test.</p>
+<h5 class="w3-wide">For the user:</h5>
+    <p class="w3-justify">You are having a class in zoom, and the professor here is giving a presentation about the object he has in his hand, which is cube-shaped, for clarification, we labeled all the six sides of the object. And while he is explaining, you have a question about side 2 of the object.</p>
+    <p class="w3-justify">What would you do?(the user clicks on the EasyAsk’s icon)</p>
+    <p class="w3-justify">A window pops up showing the user is now in queue, the user crossed the window out, and another window pops up showing all the names currently in the queue, the user is able to cancel the queueing in this window. </p>
+
+<h5 class="w3-wide">For the host:</h5>
+    <p class="w3-justify">Following the order in the queue, the host gets requests from the participants, the host can either confirms the request, which allows the application to get a picture of the object and let the user into the applications’ interaction screen. Then, the user is able to use the application to interact with the host, and their interaction can also be seen by all the participants of the meeting. A window pops up under the user’s name and shows a magnified object.</p>
+    <p class="w3-justify"> You want to zoom in, what would you do?(User clicks on the first icon on top right of the window)</p>
+    <p class="w3-justify">You want to zoom out, what would you do?(User clicks on the second icon on the top right of the window)</p>
+    <p class="w3-justify">You want to point to a spot, what would you do? (User clicks on the third icon on the top right of the window)</p>
+    <p class="w3-justify">If the user has no more questions, they can quit the application.</p>
+    <p class="w3-justify">You want to quit the application, what would you do?(User clicks on the exit button)</p>
+
+     <video width="800" controls>
+  <source src="/images/Low-Fi/test/test1.mp4" type="video/mp4">
+</video>
+
+
+
+    <h4 class="w3-wide">Prototype 2 (magnifying window):</h4>
+
+    <p class="w3-justify">Thanks for participating in EasyAsk’s user testing. Since the test has interaction between users, there are 2 screens presented, one is the user screen and the other one is the meeting host’s screen. Now, let’s start the test. </p>
+    <h5 class="w3-wide">For the user:</h5>
+    <p class="w3-justify">You are having a class on zoom, and the professor here is giving a presentation about the object he has in his hand, which is cube-shaped, for clarification, we labeled all the six sides of the object. And while he is explaining, you have a question about side 2 of the object. (the user clicks on the EasyAsk’s icon)</p>
+    <p class="w3-justify">A window pops up showing the user is now in queue, the user crossed the window out, and another window pops up showing all the names currently in the queue, the user is able to cancel the queueing in this window </p>
+
+<h5 class="w3-wide">For the host:</h5>
+    <p class="w3-justify">Following the order in the queue, the host gets requests from the participants, the host can either confirms the request, which allows the application to get a picture of the object and let the user into the applications’ interaction screen.</p>
+    <p class="w3-justify">Then, the user is able to use the application to interact with the host, and their interaction can also be seen by all the participants of the meeting.</p>
+    <p class="w3-justify">After entering the application’s screen, user’s cursor turns into a magnifying glass(User navigates to the spot of the object where he has a question about)</p>
+    <p class="w3-justify">A window pops up and shows the magnifying image of the corresponding side(for ex: if the user navigates to side 1, then the pop-up window shows the magnifying image of side 1)</p>
+    <p class="w3-justify">If the user has no more questions, they can quit the application.</p>
+    <p class="w3-justify">If the user has no more questions, he can quit the application. When you want to exit, what would you do?Press the esc key.</p>
+    <video width="800" controls>
+  <source src="/images/Low-Fi/test/test2.mp4" type="video/mp4">
+</video>
+
+ 
+
+
+
+
+
+
+<h3 class="w3-wide">Test Tasks</h3>
+    <p class="w3-justify">As our system is implemented in existing video conferencing platforms, let’s assume a meeting session has already started and skip login, join a meeting and other processes like these.</p>
+    <ol>
+      <li>Find the EASYASK button when you want to use this functionality.</li>
+      <li>Identify if you are in the queue or not.</li>
+      <li> Dequeue yourself</li>
+      <li>Zoom in/zoom out</li>
+      <li>Use magnifying glass to zoom in</li>
+      <li>Move your cursor to point at a specific position.</li>
+      <li>Find the EXIT button to end the session</li>
+    </ol>  
+
+    <p class="w3-justify">If you have any further questions, our team member will be there to help you better understand during the test.</p>
+<p class="w3-justify">Thank you for your participation! Enjoy the test!</p>
+
+
+<div style="text-align:center"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+  <video id="video1" width="420">
+    <source src="mov_bbb.mp4" type="video/mp4">
+    <source src="mov_bbb.ogg" type="video/ogg">
+    Your browser does not support HTML video.
+  </video>
+</div> 
+
+
+  </div>
+  </div>
+
+
+
+<!-- End Page Content -->
+<div>
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">McGill University</p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
 
 </body>
 </html>
