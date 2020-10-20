@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>ECSE 424/542 Project</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: left;
+}
+p.normal {
+  font-weight: normal;
+}
+
+p.light {
+  font-weight: lighter;
+}
+
+p.thick {
+  font-weight: bold;
+}
+
+p.thicker {
+  font-weight: 900;
+}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="#Proposal" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Proposal</a>
+    <a href="#Low Fidelity Prototype" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Low Fidelity Prototype</a>
+    <a href="computerprototype.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Computer Prototype</a>
+    <a href="#Formative Feedback" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Formative Feedback</a>
+    <a href="#Alpha System" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Alpha System</a>
+    <a href="#Beta System" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Beta System</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">More <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Team</a>
+        <a href="#" class="w3-bar-item w3-button">Course</a>
+        <a href="#" class="w3-bar-item w3-button">Instructor</a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="/w3images/la.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Los Angeles</h3>
+      <p><b>We had the best time playing at Venice Beach!</b></p>   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="/w3images/ny.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>New York</h3>
+      <p><b>The atmosphere in New York is lorem ipsum.</b></p>    
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="/w3images/chicago.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Chicago</h3>
+      <p><b>Thank you, Chicago - A night we won't forget.</b></p>    
+    </div>
+  </div>
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h1 class="w3-wide">Computer Prototype</h1>
+            <p class="w3-opacity"><i>October 18, 2020 </i></p>
+
+    <b>  <font size="+2">User Manual & Installation Guide</font></b><br>
+    <p class="w3-justify">The User Manual to our solution, EASYASK, has been attached here in pdf format. Click on the image below to download it:<p>
+<a href="/Desktop/ECSE424OderoYuhalWang/compImages.jpg" download="EASYASKMANUAL">
+  <img src="/Users/oderootieno/Desktop/ECSE424OderoYuhalWang/compImages.jpg" alt="EASYASK" width="104" height="142">
+</a>
+
+
+
+
+<br>
+<hr>
+
+<b>  <font size="+2">Design Evolution</font></b><br>
+<p class="w3-justify">From the feedback we received from subject testers and peer assessors, we realized some unnecessary or faulty features that needed to be removed or modified. For this deliverable, we decided to work on the first prototype we made and started to build on it and made some design changes to it as it is a more comprehensive prototype that includes all the appropriate features. <p>
+
+<p class="w3-justify">We discussed and analyzed what we received to come up with the following three changes for users better “look and feel” our design. <p>
+
+<ul class="w3-ul " style="font-weight: bold;">
+  <li class="w3-justify">1.   Waiting queue can be seen by clicking the EASYASK icon again after successfully being put in the queue: </li>
+  <p class="w3-justify"> In the previous design, a waiting queue will be popped up automatically as soon as users choose to use the EASYASK application. But, this may cause some confusion as a pop-up message indicating the user is successfully in the queue would also be displayed by then, which means users would receive two messages sequentially and they have no options to reopen the queue list once they have closed the pop-up message. Thus, in this computer prototype, we implemented a feature that users now can click the icon again to reopen the waiting queue to see in which order he or she would be called whenever they want.</p>
+
+  <li class="w3-justify">2.  Multiple participants can use the shared image simultaneously.</li>
+   <p class="w3-justify"> In real life, many participants would have questions about the same object. So we added the feature that multi participants can zoom in/ out and move their own cursors at the same time. If one participant has any problems about the shared image, he or she can talk to the presenter. After receiving the permission, two or more participants can use the cursors of their interest differentiating them by different colors of cursors. </p>
+  <li class="w3-justify">3.   Now, no pop-up messages for presenters to accept or decline a request. Alternatively, presenters can check a request list. </li>
+  <p class="w3-justify"> As one of the subject testers mentioned, in real life when a presenter is giving a lecture or presentation, he or she may not want to be interrupted so many times. We think it is a very important condition that we missed out. So we add a request list for presenters to avoid pop-up requests from the audience, once the presenter finishes talking about a certain part he or she can have an opportunity to look at the waiting queue and make decisions for acceptance or declinature. In the previous design, it was kind of a faulty feature to let presenters receive pop-up messages, which was annoying. Because, all requests from participants are put in a queue, it is realistic and convenient for presenters to have a request list as well.
+</p>
+
+</ul> 
+
+<br>
+<b>  <font size="+2">User population</font></b><br>
+<p class="w3-justify"> The main goal of our design concept is to give a chance to the audience for them to better understand about the lectures or discussions by a detailed visualization. With that being said, the user population would be relatively young groups who have demand for internet and technology. Specifically, it would be mainly university students as they have a higher possibility to be exposed to video conferencing and lectures they are having often involve some complicated objects that need to be well explained and explored. </p>
+
+<p class="w3-justify"> In some cases of product promotion or release meetings, workers can also use our functionality to describe their products and have discussions based on the shared image and cursor. The above features fit perfectly into the personas in our proposal(an electrical engineering student and an architect in a medium sized company). I hope this will be helpful to choose who to be tested on for the application. </p>
+<br>
+
+<b>  <font size="+2">Usability Goals</font></b><br>
+
+<ul class="w3-ul " style="font-weight: bold;">
+
+  <li class="w3-justify">1.   The functionality helps reduce confusion effectively. </li>
+  <p class="w3-justify"> The first goal is to reduce confusion between presenters and audience so that they can have a better understanding about what they are talking about and asking for.</p>
+  <p class="w3-justify"> Quantitative measurements: Count how many questions posted about the object (especially about its shape) in the chat log and discussion board.</p>
+
+
+  <li class="w3-justify">2.    Users should have access to the EASYASK functionality easily:</li>
+   <p class="w3-justify"> In a good user interface design, users should not find any difficulties in finding the activation button.</p>
+  <p class="w3-justify"> Quantitative measurements:Record the time that users stay at the UI to find the EASYASK button.</p>
+
+  <li class="w3-justify">3.    Messages or instructions that are given by the system are easy to understand: </li>
+   <p class="w3-justify"> There should not be any long paragraphs indicating the current situation or outcomes. Instead, pop-up messages should be short and users can act immediately after reading those.</p>
+   <p class="w3-justify"> Quantitative measurements:Record the time that users read each of the pop-up messages or instructions and reaction time once they finish reading.</p>
+
+  <li class="w3-justify">4.    The system should not cause any disruptions to the users based on users’ preferences and situations: </li>
+  <p class="w3-justify"> We do not want our pop-up messages to disrupt a lecture or discussion. Thus, there should be an option for presenters to turn off the pop-up message notification when he or she is talking about an important part. </p>
+  <p class="w3-justify"> Quantitative measurements: Number of elements that can be turned on/off. For example, mute button and silent mode.</p>
+
+  <li class="w3-justify">5.    The setup or installation should be simple:  </li>
+  <p class="w3-justify"> The application should act the same as other normal applications with its installation process being simple. Our application is not expected to be too big in terms of file size so that it should fit into a normal time range when downloading and installing.</p>
+  <p class="w3-justify"> Quantitative measurements: Record the total time that users need to finally start using the application, which includes downloading time, time of reading instructions and installation time. </p>
+
+  <li class="w3-justify">6.    All audiences should be able to get such a visualization when a channel is open: </li>
+  <p class="w3-justify"> The functionality is not designed to be private. Once a visualization of an object is generated, everyone in the meeting should receive that image since others might have the same confusion or they just want to have a better view of it.</p>
+</ul> 
+
+<br>
+<hr>
+<b>  <font size="+2">Usability Test Procedure</font></b><br>
+<p class="w3-justify"> We are giving the test procedure by answering the following questions. Examiners should have a general idea of what the test will be like based on the answers.</p>
+<ul class="w3-ul " style="font-weight: bold;">
+
+  <li class="w3-justify">1.  How many examiners are required? </li>
+  <p class="w3-justify"> The test will need two examiners for each user. One is responsible for the documentation job (video-taping, taking notes on user’s comments and reactions and giving instructions to help fill out the questionnaires).</p>
+  <p class="w3-justify">  Another one will be responsible for the installation (although we do have an installation guide, just in case some issues happen), helping the user go through our application and asking/answering any questions during the test.</p>
+
+
+  <li class="w3-justify">2.    What equipment will the examiners need?</li>
+   <p class="w3-justify"> They will need a laptop with our application being properly installed so that examiners can “look and feel” our product first, which can help assess users better since they would know what problems a user might encounter during the test. In addition, note-taking tools and a camera (cellphone) is needed if you are doing video-taping. </p>
+
+  <li class="w3-justify">3.    How should your prototype be handled? (manual/documentation)</li>
+   <p class="w3-justify"> Please refer to the user manual in which you can find detailed step by step instructions of handling our application. It is suggested that examiners should try the application first before starting a test to have a better acknowledgement.</p>
+
+  <li class="w3-justify">4.    How will you instruct your examiners to proceed? </li>
+  <p class="w3-justify"> Examiners should first give a brief introduction of our application. Here, we provide a general template for them.</p>
+  <p class="w3-justify"> “EASYASK is an additional functionality that is implemented in an existing video conferencing platform. The feature will be designed such that the presenter scans the object either in real-time or prior to the scheduled video call. After the scan, the image could be embedded in the video-conference tool so that the audience can point quickly to any areas or points of interest on a screen shared with the presenter and the presenter can also broadcast to the rest of the audience.”</p>
+  <p class="w3-justify"> After this, help users to assign a consent form, read the user introduction and manual and fill out a pre-test questionnaire. Then, a formal test session can start. You can refer to the test script which includes questions you might want the user to anwer and an overall test procedure. Finally, instruct the user to fill out a post-test questionnaire. During the whole process, you can take notes on any comments and reactions from the user, it is not limited to the questions on the data collection sheet.</p>
+
+  <li class="w3-justify">5.    How should the examiners treat the test subjects, what should they tell them?  </li>
+  <p class="w3-justify"> Examiners should treat each test subject with a friendly and respectful attitude. Try to answer their questions and clear up any confusion. Examiners should tell any instructions that are required. Please refer to the user introduction and manual or other documentation provided for details.</p>
+
+  <li class="w3-justify">6.    What should the examiners avoid doing? </li>
+  <p class="w3-justify"> Examiners should avoid sharing their personal thoughts and comments on any tasks, which might influence users’ reactions and decisions. Unless it is necessary, avoid giving direct answers to users, let them go through the test by themselves. </p>
+
+   <li class="w3-justify">7.    What should the examiners avoid telling the test subjects? </li>
+  <p class="w3-justify"> Examiners should leave space for users to let them react and make decisions objectively. They should avoid telling the test subjects how to perform a task or achieve a goal. Instead, they should explain the task if users have any doubts about it. </p>
+
+   <li class="w3-justify">8.    What/How/When should the examiners measure? </li>
+  <p class="w3-justify"> There are two major types of data that examiners need to gather. One is the data collection sheet, examiners should fill out the sheet while observing users doing the tasks. The other one is the quantitative measurements listed in usability goals. Please get familiar with these so that you will have a better understanding of when to get the data and how. Any additional findings and observation comments are appreciated. 
+ </p>
+</ul> 
+<br>
+<br>
+<b>  <font size="+2">Test script </font></b><br>
+
+<p class="w3-justify">Examiner:</b>  Thanks for participating in our EASYASK user testing phase 2. Please read carefully the user manual and introduction. Feel free to ask me any questions or you have any doubts, I will answer them if necessary </p>
+<p class="w3-justify">(Hands over the user manual and introduction)</p><br> 
+
+
+<p class="w3-justify">Examiner:</b>   Please fill out the pre-test questionnaire. </p>
+<p class="w3-justify">(Hands over the pre-test questionnaire)</p><br> 
+
+<p class="w3-justify">Examiner:</b>   Now, let’s officially start the test. Are you familiar with the steps and you know what you are supposed to do? </p>
+<p class="w3-justify">(If so) Examiner: Please find the video conferencing platform and open it.</p>
+<p class="w3-justify">(If not) Examiner: No worries. Take your time.</p><br>
+
+<p class="w3-justify">(When user opens the app)</p> 
+<p class="w3-justify">Examiner:</b>   Could you please join a new meeting? </p> <br>
+
+<p class="w3-justify">(When user is in a meeting)</p> 
+<p class="w3-justify">Examiner:</b>   ry to find the EASYASK icon and use it. </p> <br>
+
+<p class="w3-justify">(When user clicks the icon)</p> 
+<p class="w3-justify">Examiner:</b>   Now, you are in the waiting queue. Please try to open the list to see which position you are at. </p> <br>
+
+<p class="w3-justify">(When user clicks the icon again)</p> 
+<p class="w3-justify">Examiner:</b>    Do you know how to dequeue yourself?</p> <br>
+
+<p class="w3-justify">(When user clicks the red cross icon next to his name)</p> 
+<p class="w3-justify">Examiner:</b>     Good. Let’s repeat the process again (put yourself into the queue). Since at this step, we need acceptance of the presenter, which will be skipped. Let’s assume your request is accepted.</p> <br>
+
+
+<p class="w3-justify">(When user sees the shared image)</p> 
+<p class="w3-justify">Examiner:</b>     Try to zoom in/out the picture and point to any position of your interest.</p> <br>
+
+
+<p class="w3-justify">(When user accomplished the above task)</p> 
+<p class="w3-justify">Examiner:</b>     Try to exit the meeting.</p> <br>
+
+<p class="w3-justify">(When user exits the meeting)</p> 
+<p class="w3-justify">Examiner:</b>    Thank you so much. That’s all the tasks that we need you to perform.
+</p> <br>
+
+
+<br>
+<hr>
+<br>
+
+<b>  <font size="+2">Reporting</font></b><br>
+<p>This test will be timed by two  examiners and the results will be written on the provided test results sheet (see link below). The testers are asked some questions when they complete the test. To complete this form, some questions must be asked to the testers upon completion of the test. As a design team, we  believe that responses for the speed of our prototype will be very positive because we have designed it to be very responsive. </p>
+
+<p>During all the tests, the examiners are required to take written notes about any comments, feedback, irritations and suggestions from the test subjects. It is important to take notes on all the little details, such as when a user hesitates before clicking a button, or when they ask questions because they don’t understand how to complete a task. </p>
+
+<p> There is no required structure for taking  these comments. As for the usability goals, the examiners are required to report a quantitative measure related to the usability goals in tabular form (as listed above, where appropriate), and indicate if the goals were met or not. Moreover, we believe that it's important that the examiners write a possible justification or comment related to the user’s performance related to each goal, so that the implications of the test outcomes are highlighted. </p>
+
+<p> We expect testers to respond positively when asked whether they like interacting with this new tool. Similarly, it would be surprising and would require that we come back on some design decisions if we find out later on users did not think they could use this system in their everyday lives. The results of these tests will therefore have strong implications in implementing our future system.</p>
+
+<br>
+
+
+<br>
+
+<b>  <font size="+2">Usability Evaluation</font></b><br>
+<p>We have selected to use Jakob Nielsen's heuristic evaluation strategy to assess usability of EASYASK. The following are the specific heuristics that will set the base for your evaluation process:</p>
+
+<p>While these heuristics should cover most aspects of the objectives that we introduced with the usability goals, they can also serve as a reference for the evaluation. 
+<ul class="w3-ul " style="font-weight: bold;">
+<li>1.   Match between system and the real world </li>
+  <p> The EASYASK tool on Zoom must have human-like responses, respond correctly to user input and make the user forget as much as possible that he does not have a human interlocutor.</p>
+
+  <li>2.    User control and freedom</li>
+   <p> We do not want the system to cause any disruptions to the users based on users’ preferences and situations.The EASYASK tool will never force any applications or processes to stop if not previously agreed by the user. It is essential that the user keeps their freedom and uses EASYASK out of their own will. In this way, EASYASK will try to assist the user by proposing alternatives as the user (presenter and audience) uses it in Zoom.</p>
+  <li>3.    Flexibility and efficiency of use</li>
+  <p> As seen in the usability goals, EASYASK must be easy to interact with, and quick to respond during Zoom sessions. It will have to respect specific maximum response times and it should allow the user to complete the task under a certain amount of time.</p>
+
+  <li>4.    The system interface should be “intuitive”: </li>
+  <p> The prototype must illustrate clearly the feel of the future system. Attention should be given to what the system's purpose is as well as in which environment it is fulfilled. The dialogues should not contain any useless information to the user and the interaction with the system prompts must be well managed.</p>
+
+  <li>5.    The system should create more interactions between presenters and users:  </li>
+  <p class="w3-justify"> The system is designed to solve a specific issue that might happen during video conferencing. Users should have the opportunity to get a more detailed visualization of a certain object after the presenter’s permission is granted, which clears up confusion and creates more interactions.</p>
+
+  <li>6.    All audiences should be able to get such a visualization when a channel is open: </li>
+  <p class="w3-justify"> The functionality is not designed to be private. Once a visualization of an object is generated, everyone in the meeting should receive that image since others might have the same confusion or they just want to have a better view of it.</p>
+</ul> 
+
+
+<p>We have provided a questionnaire  to guide you through this evaluation process. You will get the responses to the questionnaire by evaluating the test you will be performing. This test consists of a simple walkthrough where the user utilizes the system's functionalities of EASYASK on a computer prototype.
+</p>
+
+<br>
+<hr>
+<br>
+    </div>
+  </div>
+
+
+
+
+<!-- End Page Content -->
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">McGill University</p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
