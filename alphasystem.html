@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>ECSE 424/542 Project</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: left;
+}
+p.normal {
+  font-weight: normal;
+}
+
+p.light {
+  font-weight: lighter;
+}
+
+p.thick {
+  font-weight: bold;
+}
+
+p.thicker {
+  font-weight: 900;
+}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Proposal</a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Low Fidelity Prototype</a>
+    <a href="computerprototype.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Computer Prototype</a>
+    <a href="formativefeedback.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Formative Feedback</a>
+    <a href="alphasystem.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Alpha System</a>
+    <a href="#Beta System" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Beta System</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">More <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Team</a>
+        <a href="#" class="w3-bar-item w3-button">Course</a>
+        <a href="#" class="w3-bar-item w3-button">Instructor</a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h1 class="w3-wide">Alpha System </h1>
+            <p class="w3-opacity"><i>November 15, 2020 </i></p>
+
+    <b>  <font size="+2">Design Evolution</font></b><br>
+    <p class="w3-justify">Our prototype has been rebuilt to a better standard based on the feedback from the evaluation team and test subjects. Their suggestions provide a good opportunity for us to make any improvements. We took some time to think and analyze, the following list is the design evolution for our next prototype iteration, the Alpha system:<p> 
+
+
+<br>
+
+<ul class="w3-ul " style="font-weight: bold;">
+  <li class="w3-justify">1.  Unnecessary operations are required during the process:</li>
+  <p class="w3-justify"> It is pointed out by our evaluation team that test subjects often complained about the problem with unnecessary clicks, which caused confusion. For example, notifications including “You’re in the queue” and “You’re next” require clicks to disappear, which really made our prototype ineffective. And we tried many existing applications, notification pop-ups would stay normally no more than 3 seconds. Thus, it is a good point that we need to keep focus on.</p>
+
+  <p class="w3-justify"> In addition, according to the heuristic Aesthetic and minimalist design in the Nielson’s heuristics list, interfaces should not contain information which is irrelevant or rarely needed. Our further modification to this usability issue is that a new red cross icon will be on the top right side of the pop-up window indicating to close the window, users can immediately recognize it as a notification and close it any time they would like to.</p>
+  <li class="w3-justify">2.   The dequeue button is too small and next to the user’s name too close:</li>
+   <p class="w3-justify"> The issue is also brought up by the evaluation team. During their testing, when users want to click the red cross button to dequeue, they may accidentally click their names(which puts them first in the queue). Then an unexpected and strange interface would be shown to the user. To avoid this, we decided to enlarge the red cross button and make the gap between the button and user’s name unclickable, which may prevent misclicking from happening. </p>
+
+   <p class="w3-justify"> The issue is related to the heuristic Consistency and standards in Nielsen's list. The previous design did not provide a consistent user interface. We implemented two clickable buttons being too close to each other at first. With the improvement, users should have a better control of the system(less misclicking). </p>
+
+
+  <li class="w3-justify">3.  The EasyAsk button will turn green when the functionality is activated to display images: </li>
+   <p class="w3-justify"> The modification was finalized when we were having team discussions. We used to think on the side of someone who is currently using the feature, but it is clearly not enough. Let’s imagine you are in the middle of a meeting and you have not clicked the EasyAsk button, and suddenly a shared image displays in front you without any notifications and the presenter and some participants are talking about a question that you are not familiar with, which really does not keep the users informed about what is going on.</p>
+
+  <p class="w3-justify"> The issue is related to the Heuristic Visibility of system status in Niesen’s list. Our solution to this is to make the EasyAsk green when someone is currently using the feature. By doing so, for those participants who have clicked the button can see an indicator of what will happen in a minute(a pop-up window will show up, presenter and some participants will start a discussion on the basis of this image).</p>
+
+  <li class="w3-justify">4.   Users are confused with the queue.</li>
+   <p class="w3-justify"> As a fact that it is not a perfect prototype, there is insufficient information describing the use of the queue. When users choose to make a new meeting and click the EasyAsk button, it is actually for the presenter not the participants. Clicking the names in the queue is saying this person has been granted permission from a presenter’s perspective since at the current stage, we could not have two people or more using our prototype simultaneously. Then, after clicking the EasyAsk button the second time, users can go into “participant mode” and see what they are supposed to see and operate as participants. To avoid this confusion, We will add some notifications saying the current step(interface) is for the presenter. </p>
+</ul> 
+
+<br>
+<hr>
+
+<b>  <font size="+2">Prototype Revisions</font></b><br>
+<p>We modified our design compared to the computer prototype. By focusing on feedback and being realistic, we minimized unnecessary interactions and reduced on-click feedback time for the system. We decided to reevaluate the feasibility and development effort necessary to make the EASYASK tool functional as an inbuilt tool in Zoom.</p>
+
+<p>Our alpha system can be accessed below:</p>
+
+<p class="w3-justify"><a href="https://framer.com/share/EasyAsk-Computer-Prototype--uLNPgxwiYz9mxLHkTYID?fullscreen=1&fbclid=IwAR1FZt3GleiM-f3QNhTHIoFd49X2M-iSr1HnTUPkgpL1MuTsKS0qbCcIST8#vaMnkeMVt" class="w3-bar-item w3-button w3-padding-large">Access Alpha System Here</a><p>
+
+<p>Please follow the instructions from the user manual to correctly set up the EasyAsk tool!</p>
+
+
+<br>
+
+<b>  <font size="+2">User Manual & Installation Guide</font></b><br>
+<p>What changed from the previous user manual:</p>
+<p>- Thorough installation guide with bigger icons. For example,  a new red cross icon is on the top right side of the pop-up window indicating to close the window</p>
+<p>- Every single aspect of the alpha system  explained so that users have a full understanding of the potential usage for this plugin</p>
+<p>- Instructions for testing and the accompanying images are more lenient to let the users, enabling them to  experience the system in further depth</p>
+
+<p>- The user manual for the EasyAsk tool can be found below:</p>
+
+<p class="w3-justify"><a href="https://drive.google.com/file/d/1B8RMYdgR9eFEgLoA9fRH_y-T6pQwuenq/view?usp=sharing" class="w3-bar-item w3-button w3-padding-large">Access EasyAsk User Manual Here</a><p>
+
+<br>
+
+<hr>
+<br>
+
+    </div>
+  </div>
+
+
+
+
+<!-- End Page Content -->
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">McGill University</p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
